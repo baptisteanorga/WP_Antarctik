@@ -1,0 +1,369 @@
+.page-template {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* MODULE TEXT CENTER */
+
+.module-text-center {
+    flex-basis: 100%;
+    height: 20vh;
+    margin-top: 5em;
+}
+
+.module-text-center p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media(max-width:56em) {
+    .module-text-center {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.module-image-center {
+    flex-basis: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 5em;
+}
+
+.module-image-center .container-image {
+    flex-basis: 70%;
+    text-align: center;
+}
+
+.module-image-center img {
+    height: 100%;
+}
+
+@media(max-width:40em) {
+    .module-image-center .container-image {
+        flex-basis: initial;
+    }
+    .module-image-center img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* MODUBLE TEXT LEFT / IMAGE RIGHT */
+
+.module-text-image {
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+    flex-basis: 100%;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+.module-text-image .text {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.module-text-image .text h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+
+}
+
+.module-text-image .text p {
+    width: 80%;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+/* MODULE TEXT LEFT / IMAGE RIGHT */
+
+.module-text-image .image {
+    flex-basis: 45%;
+    position: relative;
+}
+
+.module-text-image .image img {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media(max-width:75em){
+    .module-text-image{
+        height: 60vh;
+    }
+}
+@media(max-width:56em) {
+    .module-text-image {
+        height: auto;
+        flex-direction: column;
+    }
+    .module-text-image .text {
+        flex-basis: 100%;
+    }
+    .module-text-image .image {
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 2em;
+    }
+    .module-text-image .image img {
+        position: initial;
+        min-height: initial;
+        min-width: initial;
+        height: 50vh;
+        max-width: 90%;
+        margin: 0;
+        transform: inherit;
+    }
+}
+
+/* MODULE VIDEO CENTER */
+
+.module-video-center 
+{
+    margin-top: 5em;
+    flex-basis: 100%;
+    justify-content: center;
+    height: 55vh;
+    margin-bottom: 3vh;
+    display: flex;
+}
+
+.module-video-center>* {
+    width: 100vh;
+    max-width: 90%;
+    height: auto;
+}
+
+/* MODULE IMAGE BACK + 4 TEXTS */
+
+.module-image-back {
+    flex-basis: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 5em;
+}
+
+.module-image-back .image {
+    flex-basis: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.module-image-back img {
+    width: 100%;
+}
+
+.module-image-back .text-container {
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.module-image-back .text-container .text {
+    background: white;
+    border-top: 0.6em solid #1dd8fe;
+    flex-basis: 22%;
+    position: relative;
+}
+
+.module-image-back .text-container .text p {
+    width: 85%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:75em) {
+    .module-image-back .text-container {
+        height: 65%;
+    }
+}
+@media(max-width:65em) {
+    .module-image-back {
+        height: 120vh;
+    }
+    .module-image-back .text-container {
+        flex-wrap: wrap;
+        height: 80%;
+    }
+    .module-image-back .text-container .text {
+        margin-top: 2em;
+        flex-basis: 40%;
+        min-height: 30vh;
+    }
+}
+
+@media(max-width:50em) {
+    .module-image-back {
+        height: 140vh;
+    }
+    .module-image-back .image {
+        display: none;
+    }
+    .module-image-back .text-container {
+        flex-wrap: wrap;
+        height: 100%;
+        background-color: rgba(5, 4, 94, 0.432);
+    }
+    .module-image-back .text-container .text {
+        flex-basis: 90%;
+        min-height: 30vh;
+        margin: 1em auto;
+    }
+}
+
+/* MODULE PRESENTATION */
+
+.module-presentation {
+    flex-basis: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 5em;
+}
+
+.module-presentation .person {
+    flex-basis: 40%;
+    margin: 0 4em;
+    text-align: center;
+    position: relative;
+}
+
+.module-presentation .person img {
+    max-width: 50%;
+    height: 50%;
+    margin-bottom: 2em;
+}
+
+.module-presentation .person .block-color {
+    width: 100%;
+    background-color: blue;
+    height: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    z-index: -1;
+}
+
+.module-presentation .person p {
+    line-height: 1.2em;
+    /* margin-top: 3em; */
+    font-size: 1.1em;
+}
+
+/* @media(max-width:50em) {
+    .module-presentation {
+        display: block;
+        height: 120vh;
+    }
+    .module-presentation .person{
+        height: 60%;
+    }
+} */
+@media(max-width:75em) {
+.module-presentation .person p {
+    font-size: 1.1em;
+}    
+}
+@media(max-width:60em) {
+    .module-presentation {
+        display: block;
+        height: 140vh;
+    }
+    .module-presentation .person {
+        width: 90%;
+        height: 40%;
+        margin: 0 auto;
+        margin-top: 5em;
+    }
+.module-presentation .person p {
+
+    font-size: 1.3em;
+}    
+}
+
+/* MODULE INFOS */
+
+.module-info {
+    flex-basis: 100%;
+    height: 20vh;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.module-info .block-info {
+    flex-basis: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 0.5em;
+}
+
+.module-info h4 {
+    flex-basis: 70%;
+    padding-top: 1em;
+    height: 40%;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.module-info .description {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2em;
+}
+
+@media(max-width:65em) {
+    .module-info .block-info {
+        flex-basis: 80%;
+    }
+}
+
+@media(max-width:50em) {
+    .module-info {
+        height: 35vh;
+    }
+    .module-info .block-info {
+        flex-basis: 90%;
+    }
+}
