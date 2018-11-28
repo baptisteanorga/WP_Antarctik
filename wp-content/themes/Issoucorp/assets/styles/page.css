@@ -1,0 +1,104 @@
+.container-content {
+    margin-top: 4em;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+.container-content>* {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 40%;
+    font-weight: bold;
+}
+
+.container-content h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #0b3058;
+}
+
+.container-content h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #0e447e;
+}
+
+.container-content h3 {
+    text-align: center;    
+    font-size: 2em;
+    color: #1359a5;
+}
+
+.container-content p {
+    font-size: 1.25em;
+    font-weight: initial;
+    width: 80%;
+    color: rgb(43, 43, 43);
+    line-height: 1.2em;
+}
+
+.container-content ul {
+    width: 80%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    font-size: 1.25em;
+    color: rgb(43, 43, 43);    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: initial;
+    list-style: initial;
+    list-style-type: square !important;
+}
+
+.container-content ul li {
+    padding-bottom: 1em;
+    text-align: left;
+    list-style: initial;
+    display: list-item;
+}
+.container-content a {
+    color: #0e447e;
+}
+.container-content a:visited {
+    color: #0e447e;    
+}
+form{
+    text-align: center;
+}
+strong{
+    font-weight: bold;
+    color: #1359a5;
+}
+
+
+/* For donate page */
+.wpedon_paypalbuttonimage{
+    width: 40%;
+    margin: 0 auto;
+}
+@media(max-width:75em) {
+.wpedon_paypalbuttonimage{
+    width: 55%
+}
+}
+@media(max-width:55em) {
+    .wpedon_paypalbuttonimage{
+        width: 70%
+    }
+}
+@media(max-width:40em) {
+    .wpedon_paypalbuttonimage{
+        width: 100%;
+    }
+    .container-content p {
+        width: 90%;
+    }
+    .container-content ul {
+        width: 90%;
+    }
+}
