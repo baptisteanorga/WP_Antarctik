@@ -1,9 +1,9 @@
 .explore-page-fauna {
     padding-top: 4em;
     overflow: hidden;
-height: 110vh;
-    
+    height: 110vh;
 }
+
 .explore-container {
     display: flex;
     position: relative;
@@ -23,110 +23,187 @@ height: 110vh;
     overflow: hidden;
 }
 
-
-.explore-right-image img{
+.explore-right-image img {
     height: 120vh;
 }
 
-img.arrow-up{
+img.arrow-up {
     z-index: 40;
     position: absolute;
-    top:5em;
-    right:2%;
+    top: 30em;
+    right: 2%;
     height: 2%;
-    cursor :pointer;
+    cursor: pointer;
+    background: #ffffffb2 ;
+    border-radius: 0.5em;
 }
 
-img.arrow-down{
+img.arrow-down {
     z-index: 40;
     position: absolute;
-    top:5em;
-    left:2%;
+    top: 30em;
+    left: 2%;
     height: 2%;
-    cursor:pointer;
+    cursor: pointer;
     transform: rotate(180deg);
-}
-
-.explore-container .explore-left .container-text-explore .slides{
-    color:red;
-    font-weight: 500;
-    position: absolute;
-    right:20%;
+    background: #ffffffb2 ;
+    border-radius: 0.5em;
+    
     
 }
-.explore-container .explore-left  {
-    width: 100vw;
 
+.explore-container .explore-left .container-text-explore .slides {
+    color: black;
+    font-weight: 500;
+    position: absolute;
+    right: 10%;
 }
-.container-text-explore{
+
+.explore-container .explore-left {
+    width: 100vw;
+}
+
+.container-text-explore {
     width: 80%;
     margin: 0em auto;
     margin-bottom: 4em;
     position: relative;
 }
-.container-text-explore  p {
-    line-height:1.2em;
+
+.container-text-explore p {
+    line-height: 1.2em;
     padding: 1em 0;
 }
 
-.container-text-explore .species{
-    color:black;
-    font-size:2.5em;
+.container-text-explore .species {
+    color: black;
+    font-size: 2.5em;
     font-weight: 600;
     position: relative;
     padding-bottom: 2em;
 }
 
-.container-text-explore .species p.latin{
-    color:rgb(164, 164, 164);
+.container-text-explore .species p.latin {
+    color: rgb(164, 164, 164);
     position: absolute;
-    font-size:0.3em;
-    left:0;
-    Top:40%;
+    font-size: 0.3em;
+    left: 0;
+    Top: 40%;
 }
 
-.container-text-explore p.content-legend{
+.container-text-explore p.content-legend {
     position: relative;
-    font-size:1.2em;
+    font-size: 1.2em;
     font-weight: 600;
-    color:#212121;
+    color: #212121;
     height: 100%;
-    
 }
 
-.container-text-explore p.content-legend span.right{
+.container-text-explore p.content-legend span.right {
     position: absolute;
-    left:7em;
-    font-size:1em;
+    left: 7em;
+    font-size: 1em;
     font-weight: 200;
-    color:#777777;
+    color: #777777;
     height: 100%;
+}
 
+/*MENU NAV*/
+
+.menu-flora {
+    font-weight: 500;
+    color: black;
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.menu-flora .left {
+    top: 10%;
+    left: 5em;
+}
+
+.menu-flora .right {
+    top: 10%;    
+    left: 42.5%;
+}
+
+
+.menu-flora .left:hover {
+    color: #1dd8fe;
+}
+
+.menu-flora .arrow_menu-flora {
+    position: absolute;
+}
+
+.menu-flora .arrow_menu-flora>a {
+    text-decoration: none;
+}
+
+.menu-flora .right>a>p {
+    position: absolute;
+    right: 0;
+}
+
+.menu-flora .right:hover {
+    color: #1dd8fe;
+}
+
+.menu-flora a img {
+    height: 2em;
+    width: 2em;
+}
+
+.menu-flora .left a img {
+    transform: rotate(180deg);
+}
+
+/*RESPONSIVE*/
+
+@media(max-width:75em) {
+    .explore-page-fauna {
+        height: auto;
+    } 
+}
+@media(max-width:1000px) {
+.explore-page-fauna {
+    height: auto;
+}    
+    .explore-container .explore-left{
+        flex-basis: 100%;
+    }
+    .menu-flora {
+        font-weight: 500;
+        font-size: 1em;
+    }
+    .menu-flora .left {
+        left: 2em;
+    }
+    .menu-flora .right {
+        left: 90%;
+    }
+    .explore-right-image {
+        display: none;
+    }
+    .explore-container .explore-left {
+        width: 50em;
+    }
+    .explore-container .explore-left .container-text-explore .slides {
+        right: 0;
+    }
+    .container-text-explore p.content-legend span.right {
+        font-size: 0.8em;
+    }
+    .container-text-explore p.content-legend {
+        font-size: 1em;
+        font-weight: 600;
+    }
 }
 
 @media(max-width:40em) {
-
-    
-    .explore-right-image{
-        display: none;
+    .menu-flora .right {
+        left: 82.5%;
     }
-    .explore-container .explore-left{
-        width:50em; 
-    }
-
-    .explore-container .explore-left .container-text-explore .slides{
-        right:0;
-        
-    }
-
-    .container-text-explore p.content-legend span.right{
-        font-size:0.8em;
-    }
-    
-
-    .container-text-explore p.content-legend{
-        font-size:1em;
-        font-weight: 600;        
-    }
-
 }
